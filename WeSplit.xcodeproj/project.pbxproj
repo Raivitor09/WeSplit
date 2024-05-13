@@ -11,6 +11,7 @@
 		3C99041B2BE93F3F00215BC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C99041A2BE93F3F00215BC6 /* ContentView.swift */; };
 		3C99041D2BE93F4000215BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C99041C2BE93F4000215BC6 /* Assets.xcassets */; };
 		3C9904202BE93F4000215BC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C99041F2BE93F4000215BC6 /* Preview Assets.xcassets */; };
+		3CEC36982BEE7BA1003EFCA8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC36972BEE7BA1003EFCA8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3C99041A2BE93F3F00215BC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C99041C2BE93F4000215BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C99041F2BE93F4000215BC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CEC36962BEE7BA1003EFCA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3C9904182BE93F3F00215BC6 /* WeSplitApp.swift */,
 				3C99041A2BE93F3F00215BC6 /* ContentView.swift */,
+				3CEC36972BEE7BA1003EFCA8 /* Localizable.strings */,
 				3C99041C2BE93F4000215BC6 /* Assets.xcassets */,
 				3C99041E2BE93F4000215BC6 /* Preview Content */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEC36982BEE7BA1003EFCA8 /* Localizable.strings in Resources */,
 				3C9904202BE93F4000215BC6 /* Preview Assets.xcassets in Resources */,
 				3C99041D2BE93F4000215BC6 /* Assets.xcassets in Resources */,
 			);
@@ -143,6 +147,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CEC36972BEE7BA1003EFCA8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEC36962BEE7BA1003EFCA8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3C9904212BE93F4000215BC6 /* Debug */ = {

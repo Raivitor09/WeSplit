@@ -1,24 +1,29 @@
-//
-//  ContentView.swift
-//  WeSplit
-//
-//  Created by Vítor Raimundo on 06/05/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        let strings = Bundle.main.path(forResource: "Strings", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: strings!)
+        
+        let helloString = dict?["hello-string"] as! String
+        let introductionString = String(format: (dict?["introduction-string"] as! String), "Vitor")
+        let descriptionString = dict?["description-string"] as! String
+        
+        return VStack(spacing: 10) {
+            Text(helloString)
+                .font(.title.bold())
+            Text(descriptionString)
+                .font(.body)
+            Text(introductionString)
+                .font(.caption)
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
+#endif
